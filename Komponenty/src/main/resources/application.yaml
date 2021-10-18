@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        url: jdbc:h2:mem:testdb
+        driverClassName: org.h2.Driver
+
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        open-in-view: false
+        show-sql: true
+        ddl-auto: create-drop
+    h2:
+        console:
+            enabled: true
+server:
+    port: 8080
