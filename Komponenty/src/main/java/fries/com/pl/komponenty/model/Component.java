@@ -1,15 +1,16 @@
-package boguslawfries.com.pl.wypociny.model;
+package fries.com.pl.komponenty.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-import  javax.persistence.Entity;
-
+import javax.persistence.Entity;
 import javax.persistence.Id;
+
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
-
 public class Component
 {
     public Component() {};
@@ -19,5 +20,5 @@ public class Component
     private String description;
     private String logo;
     private Boolean active;
-
 }
+
